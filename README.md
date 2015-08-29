@@ -4,6 +4,17 @@ mdDateTime
 [![Build Status](https://travis-ci.org/simeonc/md-date-time.png?branch=master)](https://travis-ci.org/simeonc/md-date-time) [![Coverage Status](https://coveralls.io/repos/simeonc/md-date-time/badge.png)](https://coveralls.io/r/simeonc/md-date-time)
 
 
+#Czech localization
+Czech full localization with :
+
+bower install angular-i18n --save
+
+Add after angular this line for internalization
+
+```js
+<script src="/bower_components/angular-i18n/angular-locale_cs-cz.js"></script>
+```
+
 ## Requirements
 
 1. `AngularJS` ≥ `1.2.x`
@@ -97,3 +108,4 @@ This project is licensed under the [MIT license](http://opensource.org/licenses/
 Special thanks to all the contributions thus far! 
 
 For a full list see: https://github.com/simeonc/md-date-time/graphs/contributors
+
