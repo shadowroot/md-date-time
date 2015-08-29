@@ -63,7 +63,7 @@ angular.module('mdDateTime', [])
 			_month: 0
 			_year: 0
 			_months: (_dateFilter new Date(0, i), 'MMMM' for i in [0..11])
-			offsetMargin: -> "#{new Date(@_year, @_month).getDay() * 2.7}rem"
+			offsetMargin: -> "#{((new Date(@_year, @_month).getDay()-1) % 7) * 2.7}rem"
 			isVisible: (d) -> new Date(@_year, @_month, d).getMonth() is @_month
 			class: (d) ->
 				# coffeelint: disable=max_line_length
